@@ -3,4 +3,3 @@ ch = 97
 while ch <= 122:
     print("{}".format(chr(ch)), end="")
     ch = ch + 1
-
