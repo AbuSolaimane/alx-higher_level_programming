@@ -2,7 +2,7 @@
 
 if __name__ == "__main__":
     numOfArgs = len(argv)
-    chaine = numOfArgs == 1 ? "argument" : "arguments"
+    chaine = numOfArgs == 1 ? "argument": "arguments"
     print("{} {}".format(numOfArgs, chaine), end="")
 
     if numOfArgs > 0:
@@ -11,4 +11,3 @@ if __name__ == "__main__":
             print("{}: {}".format(i + 1, argv[i]))
     else:
         print(".")
-
