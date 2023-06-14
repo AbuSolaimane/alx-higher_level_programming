@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def best_score(a_dictionary):
-    if len(list(a_dictionary)) == 0:
+    if len(a_dictionary) == 0 or not isinstance(a_dictionary, dict):
         return (None)
     max_key = list(a_dictionary.keys())[0]
     max_value = a_dictionary[max_key]
@@ -9,4 +9,3 @@ def best_score(a_dictionary):
             max_key = k
             max_value = v
     return (max_value)
-best_score({'John': 12, 'Bob': 14, 'Mike': 14, 'Molly': 16, 'Adam': 10})
