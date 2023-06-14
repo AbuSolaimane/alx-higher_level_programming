@@ -1,6 +1,3 @@
 #!/usr/bin/python3
-def simple_delete(a_dictionary, key=""):
-    my_a_dictionary = a_dictionary
-    if key in a_dictionary.keys():
-        del my_a_dictionary[key]
-    return (my_a_dictionary)
+def square_matrix_map(matrix=[]):
+    return (map(lambda row: map(lambda item: item ** 2, row), matrix))
