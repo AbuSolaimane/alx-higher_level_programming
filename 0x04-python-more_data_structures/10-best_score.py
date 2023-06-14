@@ -9,3 +9,4 @@ def best_score(a_dictionary):
             max_key = k
             max_value = v
     return (max_value)
+best_score({'John': 12, 'Bob': 14, 'Mike': 14, 'Molly': 16, 'Adam': 10})
