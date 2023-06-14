@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-def simple_delete(a_dictionary, key=""):
-    my_a_dictionary = a_dictionary
-    if key in a_dictionary.keys():
-        del my_a_dictionary[key]
-    return (my_a_dictionary)
+def complex_delete(a_dictionary, value):
+    for key in list(a_dictionary.keys()):
+        if a_dictionary[key] == value:
+            del a_dictionary[key]
+    return a_dictionary
