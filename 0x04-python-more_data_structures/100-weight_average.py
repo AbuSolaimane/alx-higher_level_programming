@@ -1,6 +1,10 @@
 #!/usr/bin/python3
-def simple_delete(a_dictionary, key=""):
-    my_a_dictionary = a_dictionary
-    if key in a_dictionary.keys():
-        del my_a_dictionary[key]
-    return (my_a_dictionary)
+def weight_average(my_list=[]):
+    if not my_list:
+        return 0
+    my_average = 0
+    my_div = 0
+    for tupl in my_list:
+        my_average += tupl[0] * tupl[1]
+        my_div += tupl[1]
+    return float(my_average / my_div)
