@@ -1,3 +1,5 @@
 #!/usr/bin/node
-const myVar = 'JavaScript is amazing';
-console.log(myVar);
+function add (a, b) {
+  return a + b;
+}
+console.log(add(parseInt(process.argv[2]), parseInt(process.argv[3])));

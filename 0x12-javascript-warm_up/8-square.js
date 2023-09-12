@@ -3,7 +3,7 @@ const size = process.argv[2];
 if (isNaN(size)) {
   console.log('Missing size');
 } else {
-  let columnSize = parseInt(size);
+  const columnSize = parseInt(size);
   for (let i = 0; i < columnSize; i++) {
     let row = '';
     for (let j = 0; j < columnSize; j++) row += 'X';
