@@ -1,3 +1,12 @@
 #!/usr/bin/node
-const myVar = 'JavaScript is amazing';
-console.log(myVar);
+const size = process.argv[2];
+if (isNaN(size)) {
+  console.log('Missing size');
+} else {
+  let columnSize = parseInt(size);
+  for (let i = 0; i < columnSize; i++) {
+    let row = '';
+    for (let j = 0; j < columnSize; j++) row += 'X';
+    console.log(row);
+  }
+}
