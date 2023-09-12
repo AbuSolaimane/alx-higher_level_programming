@@ -1,3 +1,7 @@
 #!/usr/bin/node
-const myVar = 'JavaScript is amazing';
-console.log(myVar);
+function addMeMaybe (number, theFunction) {
+  number++;
+  theFunction(number);
+}
+
+exports.addMeMaybe = addMeMaybe;
