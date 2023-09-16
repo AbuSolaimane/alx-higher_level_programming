@@ -3,7 +3,7 @@
 this is a module
 """
 
-from MySQLdb import _mysql as driver
+import MySQLdb as driver
 from sys import argv
 
 if __name__ == '__main__':
