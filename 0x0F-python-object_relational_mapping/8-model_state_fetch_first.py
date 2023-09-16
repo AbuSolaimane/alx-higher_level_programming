@@ -19,7 +19,7 @@ if __name__ == "__main__":
     # Create a session
     Session = sessionmaker(bind=engine)
     session = Session()
-    state_ = session.query(State).order_by(State.id).limit(1)
+    state_ = session.query(State).order_by(State.id).first()
 
     if state_ is not None:
         print('{0}: {1}'.format(state_.id, state_.name))
