@@ -16,16 +16,14 @@ if __name__ == '__main__':
     # cursor object created to interact with the database
     cursor = db_.cursor()
     # Execute a simple SELECT query
-    query = "SELECT c.id, c.name FROM \
-            cities c INNER JOIN states s ON \
+    query = "SELECT c.name FROM \
+            cities c JOIN states s ON \
             c.state_id = s.id WHERE s.name \
-            LIKE BINARY %(name_)s  ORDER BY c.id ASC"
-    cursor.execute(query, {'name_': argv[4]})
+            LIKE BINARY %(name_s)s ORDER BY c.id ASC"
+    cursor.execute(query, {'name_s': argv[4]})
     # Fetch and print the results
     states = cursor.fetchall()
-    if states is not None:
-        for row in states:
-            print(row)
+    print(", ".join([row[0] for row in states]))
 
     # Close the cursor and the database connection
     cursor.close()
