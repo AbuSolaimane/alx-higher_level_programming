@@ -25,3 +25,6 @@ if __name__ == "__main__":
 
     for city_, state_ in join_res:
         print("{}: ({}) {}".format(state_.name, city_.id, city_.name))
+
+    session.commit()
+    session.close()
