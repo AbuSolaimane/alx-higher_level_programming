@@ -15,7 +15,7 @@ if __name__ == "__main__":
     url = "mysql+mysqldb://{}:{}@localhost:3306/{}".format(
         argv[1], argv[2], argv[3])
     # Create the database engine using the url
-    engine = create_engine(url, echo=True)
+    engine = create_engine(url)
     # Create a session
     Session = sessionmaker(bind=engine)
     session = Session()
