@@ -22,4 +22,4 @@ if __name__ == "__main__":
 
     state_ = session.query(State).filter(State.id == 2).first()
     state_.name = "New Mexico"
-    session_.commit()
+    session.commit()
