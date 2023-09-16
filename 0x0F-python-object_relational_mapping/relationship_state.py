@@ -3,6 +3,7 @@
 this is a module
 """
 
+from sqlalchemy.orm import relationship
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 
