@@ -21,7 +21,7 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
     
-    join_res = session.query(City, State).join(State)
+    join_res = session.query(City, State).join(State).all()
 
-    for city_, state_ in join_res.all():
+    for city_, state_ in join_res:
         print("{}: ({}) {}".format(state_.name, city_.id, city_.name))
