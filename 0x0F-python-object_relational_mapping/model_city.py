@@ -6,8 +6,6 @@ this is a module
 from sqlalchemy import Column, Integer, String, ForeignKey
 from model_state import Base, State
 
-Base = declarative_base()
-
 
 class City(Base):
     """
