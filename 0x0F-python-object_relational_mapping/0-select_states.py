@@ -7,6 +7,9 @@ from MySQLdb import _mysql as driver
 from sys import argv
 
 if __name__ == '__main__':
+    """
+    the main
+    """
     db = driver.(
         host="localhost", user=argv[1], password=argv[2],
         database=argv[3], port=3306)
