@@ -10,7 +10,7 @@ if __name__ == '__main__':
     """
     the main
     """
-    db = driver.(
+    db = driver.connect(
         host="localhost", user=argv[1], password=argv[2],
         database=argv[3], port=3306)
     # cursor object created to interact with the database
