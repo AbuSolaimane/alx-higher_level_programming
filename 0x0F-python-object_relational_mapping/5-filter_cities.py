@@ -16,7 +16,7 @@ if __name__ == '__main__':
     # cursor object created to interact with the database
     cursor = db_.cursor()
     # Execute a simple SELECT query
-    query = "SELECT c.id, c.name, s.name FROM \
+    query = "SELECT c.id, c.name FROM \
             cities c INNER JOIN states s ON \
             c.state_id = s.id WHERE s.name \
             LIKE BINARY %(name)s  ORDER BY c.id ASC"
