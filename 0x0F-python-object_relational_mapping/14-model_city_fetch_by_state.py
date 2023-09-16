@@ -20,7 +20,7 @@ if __name__ == "__main__":
     # Create a session
     Session = sessionmaker(bind=engine)
     session = Session()
-    
+
     join_res = session.query(City, State).join(State).all()
 
     for city_, state_ in join_res:
