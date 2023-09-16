@@ -9,7 +9,7 @@ from model_state import Base, State
 Base = declarative_base()
 
 
-class State(Base):
+class City(Base):
     """
     this is a class
     """
