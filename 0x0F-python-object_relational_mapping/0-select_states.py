@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+this is a module
+"""
 
 from MySQLdb import _mysql as driver
 from sys import argv
