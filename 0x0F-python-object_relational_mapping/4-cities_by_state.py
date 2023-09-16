@@ -17,7 +17,8 @@ if __name__ == '__main__':
     cursor = db_.cursor()
     # Execute a simple SELECT query
     query = "SELECT c.id, c.name, s.name FROM \
-            cities c INNER JOIN states s ON c.state_id = s.id ORDER BY c.id ASC"
+            cities c INNER JOIN states s ON \
+            c.state_id = s.id ORDER BY c.id ASC"
     cursor.execute(query)
     # Fetch and print the results
     states = cursor.fetchall()
