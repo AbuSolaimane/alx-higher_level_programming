@@ -20,8 +20,9 @@ if __name__ == '__main__':
     cursor.execute(query)
     # Fetch and print the results
     states = cursor.fetchall()
-    for row in states:
-        print(row)
+    if states is not None:
+        for row in states:
+            print(row)
 
     # Close the cursor and the database connection
     cursor.close()
