@@ -19,8 +19,8 @@ if __name__ == '__main__':
     query = "SELECT c.id, c.name FROM \
             cities c INNER JOIN states s ON \
             c.state_id = s.id WHERE s.name \
-            LIKE BINARY %(name)s  ORDER BY c.id ASC"
-    cursor.execute(query, {'name': argv[4]})
+            LIKE BINARY %(name_)s  ORDER BY c.id ASC"
+    cursor.execute(query, {'name_': argv[4]})
     # Fetch and print the results
     states = cursor.fetchall()
     if states is not None:
