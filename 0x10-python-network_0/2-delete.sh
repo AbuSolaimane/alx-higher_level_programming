@@ -1,3 +1,3 @@
 #!/bin/bash
-# use curl to send a request and displays the size of the response
-curl -s "$1" | wc -c
+# use curl to send a delete request and display the body
+curl -s -X DELETE "$1"
