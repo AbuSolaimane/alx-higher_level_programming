@@ -3,6 +3,7 @@
     look for the peak in a list
 """
 
+
 def find_peak(list_of_integers):
     """
      this is a class
@@ -21,7 +22,8 @@ def find_peak(list_of_integers):
             if mid // 2 == 0:
                 mid = 2
             midlle = midlle + mid // 2
-        elif mid > 0 and list_of_integers[midlle] < list_of_integers[midlle - 1]:
+        elif (mid > 0 and
+                list_of_integers[midlle] < list_of_integers[midlle - 1]):
             if mid // 2 == 0:
                 mid = 2
             midlle = midlle - mid // 2
