@@ -1,3 +1,3 @@
 #!/bin/bash
 # use curl to send a request and display all allowed methods
-curl -sI "$1" | grep -i "Allow:" | awk '{print $2}'
+curl -s -I "$1" | grep -i "Allow:" | cut -d " " -f 2-
