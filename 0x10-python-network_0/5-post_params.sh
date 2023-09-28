@@ -1,3 +1,3 @@
 #!/bin/bash
-# use curl to send a request and displays the size of the response
-curl -s "$1" | wc -c
+# use curl to send a Post request with body and display the response
+curl -sX POST -d 'email=test@gmail.com&subject=I will always be here for PLD' "$1"
